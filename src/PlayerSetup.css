@@ -1,0 +1,135 @@
+.hidden {
+  display: none;
+}
+
+.modal-window {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.115);
+  z-index: 0;
+}
+
+.modal-player {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  margin-top: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  width: 18%;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px 0px rgba(44, 57, 121, 0.09);
+  padding: 24px 24px 40px;
+}
+
+.modal-svg {
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.modal-player h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.modal-block {
+  color: var(--gray-700, #373745);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#name0, #name1{
+  margin-top: 8px;
+}
+
+.modal-block p {
+  margin-bottom: 8px;
+}
+
+.modal-block input{
+  padding: 12px 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-weight: 400;
+  border: 1px solid var(--gray-100, #DCDCDF);
+  background: var(--gray-white, #FFF);
+}
+
+.modal-block input::placeholder {
+  font-size: 16px;
+  color: #B1B1B7;
+}
+
+.modal-settings {
+  margin-top: 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.age {
+  width: 20%;
+}
+
+.registration {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.registration button {
+  border-radius: 12px;
+  background: #60C2AA;
+  color: #fff;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+
+.sex-gender form{
+  display: flex;
+  gap: 24px;
+}
+
+.sex-gender form input[type='radio'] {
+  display: none;
+}
+
+.img-radio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.img-radio img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 0.2s ease-in-out;
+  border-radius: 50%;
+  border: 1px solid var(--gray-100, #DCDCDF);
+  padding: 8px;
+}
+
+.img-radio input[type='radio']:checked + img {
+  border: 1px solid #60C2AA;
+  background: #60C2AA;
+}
+
+.womanImg img {
+  background-image: url(../src/imgs/modal-woman.png);
+}
+
+.manImg img {
+  background-image: url(../src/imgs/modal-man.png);
+}

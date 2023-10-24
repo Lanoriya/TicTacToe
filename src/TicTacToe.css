@@ -1,0 +1,62 @@
+.board {
+  width: 100%;
+}
+
+.board-game {
+  width: 100%;
+}
+
+.board-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.board-cell {
+  width: calc(100% / 3);
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  border-radius: 12px;
+  background: var(--gray-white, #FFF);
+  border: none;
+}
+
+.board-cell .icon {
+  width: 80%;
+  height: 80%;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+}
+
+.status h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.icon-step {
+  width: 24px;
+}
+
+.board-turn {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  width: 60%;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--gray-700, #373745);
+  box-shadow: 0px 4px 20px 0px rgba(44, 57, 121, 0.09);
+}
+
+.win-x {
+  background: #F3BBD0;
+}
+
+.win-o {
+  background: #CFEDE6;
+}
