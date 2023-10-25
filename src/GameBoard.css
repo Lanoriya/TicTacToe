@@ -49,7 +49,7 @@
   gap: 12px;
 }
 
-.gamer svg {
+.gamer img {
   width: 24px;
   height: 24px;
 }
@@ -88,4 +88,40 @@
   padding: 24px;
   background: #EDEDED;
   border-radius: 12px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  margin-top: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  width: 18%;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px 0px rgba(44, 57, 121, 0.09);
+  padding: 24px 24px 40px;
+}
+
+.modal-content img {
+  width: 120px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  border-radius: 12px;
+  background: #60C2AA;
+  color: #fff;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 20px;
 }

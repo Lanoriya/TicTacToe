@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './PlayerSetup.css'
 import modalMan from './imgs/modal-man.png'
 import modalWoman from './imgs/modal-woman.png'
