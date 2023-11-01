@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.aside-left {
+  margin: 60px 0px 0px 40px; 
+  width: 30%;
+}
+
+.container-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 30%;
+  margin-top: 60px;
+}
+
+.aside-right {
+  width: 30%;
+  margin-right: 40px; 
+  justify-content: flex-end;
+  display: flex;
+}
+
+.aside-gamers {
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 20px;
+  background: var(--gray-white, #FFF);
+  box-shadow: 0px 4px 20px 0px rgba(44, 57, 121, 0.09);
+  width: 82%;
+}
+
+.gamers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gamers {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.gamer {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.gamer img {
+  width: 24px;
+  height: 24px;
+}
+
+.gamer-about {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gamer-about h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #373745;
+}
+
+.gamer-about p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #898993;
+}
+
+.timer-container {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.board-timer {
+  font-weight: 900;
+  width: 20%;
+  margin: 0 auto;
+  align-items: center;
+  font-size: 2vw;
+  color: var(--gray-700, #373745);
+  text-align: center;
+  padding: 24px;
+  background: #EDEDED;
+  border-radius: 12px;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  margin-top: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-50%);
+  width: 18%;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px 0px rgba(44, 57, 121, 0.09);
+  padding: 24px 24px 40px;
+}
+
+.modal-content img {
+  width: 120px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.modal-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  border-radius: 12px;
+  background: #60C2AA;
+  color: #fff;
+  width: 100%;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 20px;
+}
+
+.modal-window {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 50%;
+  height: 100%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.115);
+  z-index: 1;
+}
+
+.new-game {
+  margin-bottom: 20px;
+}
+
+.back-to-menu {
+  background: #F7F7F7 !important;
+  color: #373745 !important;
+}

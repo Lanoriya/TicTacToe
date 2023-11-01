@@ -1,0 +1,132 @@
+.chat {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  margin-left: auto;
+  width: 25vw;
+  height: 88%;
+}
+
+.chat:before {
+  content: '';
+  position: fixed;
+  z-index: 1;
+  width: 30%;
+  right: 0;
+  height: 25vh;
+  top: 0;
+  background: linear-gradient(180deg, #F6F6F6 37.38%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+.no-messages {
+  margin-bottom: 40px;
+  color: #898993;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.chat-messages::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  border-radius: 16px;
+  background-color: #d1d1d1;
+}
+
+.message-input::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  right: 0;
+  height: 18px;
+  background: linear-gradient(0deg, #F6F6F6 50%, rgba(255, 255, 255, 0.00) 100%);
+  bottom: 100%;
+}
+
+.message-input {
+  display: flex;
+  position: relative;
+  gap: 12px;
+  text-align: center;
+}
+
+.message-input input {
+  border-radius: 12px;
+  font-size: 16px;
+  padding-left: 16px;
+}
+
+.message-input input::placeholder {
+  padding: 12px 4px;
+  color: #B1B1B7;
+}
+
+.chat-input {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.chat input {
+  flex: 1;
+  border: 1px solid #DCDCDF;
+  border-radius: 12px;
+}
+
+.sendBtn {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sendBtn img {
+  background: #60C2AA;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(44, 57, 121, 0.10);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  padding: 8px;
+}
+
+.message:nth-last-child(1) {
+  margin-bottom: 18px;
+}
+
+.message-about {
+  display: flex;
+  justify-content: space-between;
+}
+
+.message-time {
+  color: #898993;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+.message-text {
+  text-align: left;
+  color: #373745;
+  border-radius: 8px;
+  line-height: 24px;
+  font-size: 16px;
+  word-wrap: break-word;
+}

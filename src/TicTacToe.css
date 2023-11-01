@@ -1,0 +1,81 @@
+.board {
+  width: 100%;
+}
+
+.board-game {
+  width: 100%;
+}
+
+.board-row {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.board-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  aspect-ratio: 1 / 1;
+  height: 100%;
+  border-radius: 12px;
+  background: var(--gray-white, #FFF);
+  border: none;
+}
+
+.board-cell .icon {
+  width: 80%;
+  height: 80%;
+}
+
+.status {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  width: 70%;
+  margin: 40px auto;
+  padding: 12px;
+  border-radius: 12px;
+  background: #373745;
+  box-shadow: 0px 4px 20px 0px rgba(44, 57, 121, 0.09);
+  color: #fff;
+  align-items: center;
+}
+
+.status img {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-step {
+  width: 24px;
+  height: 24px;
+}
+
+.board-turn {
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;;
+  gap: 12px;
+  width: 60%;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--gray-700, #373745);
+  box-shadow: 0px 4px 20px 0px rgba(44, 57, 121, 0.09);
+}
+
+.board-turn h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+
+.square.winning.X {
+  background: #CFEDE6;
+}
+
+.square.winning.O {
+  background: #F3BBD0; 
+}
