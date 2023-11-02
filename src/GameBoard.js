@@ -84,9 +84,9 @@ function GameBoard() {
               <img className="icon" src={symbol === 'X' ? XIcon : OIcon} alt={symbol} />
               <div className="gamer-about">
                 <h2>{players[symbol].name || `Игрок ${symbol}`}</h2>
-                <p>{`${players[symbol].wins} побед (${symbol === 'X' ? playerXWinPercentage : playerOWinPercentage}%)`}</p>
+                <p>{`${(players[symbol].wins !== null && players[symbol].wins !== undefined && !isNaN(players[symbol].wins)) ? players[symbol].wins : 0 } побед (${symbol === 'X' ? playerXWinPercentage : playerOWinPercentage}%)`}</p>
               </div>
-            </div>
+            </div>  
           ))}
         </aside>
       </div>

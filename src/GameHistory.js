@@ -54,7 +54,7 @@ function GameHistory() {
             </tr>
           </thead>
           <tbody>
-            {games.map((game, index) => (
+            {games.reverse().map((game, index) => (
               <tr key={index}>
                 <td colSpan="1" className="td-players">
                   <div className="name">
